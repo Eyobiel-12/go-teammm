@@ -1,0 +1,21 @@
+node_modules
+.next
+.turbo
+.vercel
+dist
+out
+
+# Env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.log
+.idea
+.vscode
+
