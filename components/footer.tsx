@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Linkedin, Mail, Phone, MapPin } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
 import { translations, t } from "@/lib/translations"
@@ -13,12 +14,15 @@ export function Footer() {
       <div className="container mx-auto px-4 py-16 lg:px-8">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="flex items-center gap-2">
-              <div className="h-9 w-9 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">G</span>
-              </div>
-              <span className="text-xl font-bold">Go-team</span>
-            </div>
+            <Link href="/" className="inline-block">
+              <Image
+                src="/goteamlogo.jpeg"
+                alt="Go-team logo"
+                width={120}
+                height={30}
+                className="h-9 w-auto object-contain"
+              />
+            </Link>
             <p className="mt-4 text-sm leading-relaxed opacity-80">{t(translations.footer.description, language)}</p>
             <div className="mt-6 flex items-center gap-4">
               <Link href="#" className="opacity-70 transition-opacity hover:opacity-100" aria-label="LinkedIn">

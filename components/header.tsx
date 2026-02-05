@@ -26,17 +26,14 @@ export function Header() {
       <nav className="container mx-auto flex h-16 items-center justify-between px-4 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="relative h-9 w-9 overflow-hidden rounded-lg bg-background/80 shadow-md ring-1 ring-border">
-            <Image
-              src="/logo.png"
-              alt="Go-team logo"
-              fill
-              className="object-contain"
-              sizes="36px"
-              priority
-            />
-          </div>
-          <span className="text-2xl font-bold tracking-tight text-foreground">Go-team</span>
+          <Image
+            src="/goteamlogo.jpeg"
+            alt="Go-team logo"
+            width={140}
+            height={36}
+            className="h-9 w-auto object-contain"
+            priority
+          />
         </Link>
 
         <div className="hidden items-center gap-1 md:flex">
