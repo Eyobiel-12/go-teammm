@@ -29,7 +29,7 @@ export function Footer() {
                 <Linkedin className="h-5 w-5" />
               </Link>
               <Link
-                href="mailto:info@go-team.nl"
+                href="mailto:info@alpgr.com"
                 className="opacity-70 transition-opacity hover:opacity-100"
                 aria-label="Email"
               >
@@ -116,8 +116,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 flex-shrink-0 opacity-70" />
-                <Link href="mailto:info@go-team.nl" className="text-sm opacity-70 hover:opacity-100">
-                  info@go-team.nl
+                <Link href="mailto:info@alpgr.com" className="text-sm opacity-70 hover:opacity-100">
+                  info@alpgr.com
                 </Link>
               </li>
             </ul>
